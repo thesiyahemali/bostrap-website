@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- col-auto
+    sm 576
+    md 768
+    lg 992
+    xl 1200
+    xxl 1400 -->
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .hemali {
+      width: 110px;
+    }
+
+    .hemali:hover {
+      width: 120px;
+      transition: 0.5s all;
+    }
+
+    .fs-h1 {
+      font-size: 50px;
+    }
+
+    .wd-p {
+      width: 50%;
+    }
+
+    .content-mt {
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+    .ml-card{
+      margin-left: -5%;
+    }
+    /* .mw-card{
+      max-width: 350px;
+    } */
+    @media(max-width:576px) {
+      .pr-nav {
+        padding-right: 10%;
+        margin-top: 1%;
+      }
+
+      .fs-h1 {
+        font-size: 20px;
+      }
+
+      .content-mt {
+        margin-top: 5%;
+        margin-right: 5%;
+      }
+
+      .wd-p {
+        width: 80%;
+      }
+
+      .fs-p {
+        font-size: 14px;
+      }
+     
+    }
+
+    @media(min-width:576px) {
+      .pr-nav {
+        padding-right: 10%;
+        margin-top: 1%;
+      }
+
+      .fs-h1 {
+        font-size: 33px;
+      }
+
+      .content-mt {
+        margin-top: 5%;
+        margin-left: -52%;
+      }
+
+      .wd-p {
+        width: 47%;
+      }
+
+      .fs-p {
+        font-size: 14px;
+      }
+      .mw-card{
+       width: 513px;
+    }
+    .mw-carde{
+      max-width: 490px;
+    }
+    .fs-card{
+      margin-top: -13%;
+      margin-left: 28%;
+    }
+    .ml-text{
+      margin-left: 28%;
+    }
+    .ml-card{
+      margin-left: -0%;
+    }
+
+    }
+
+    @media(min-width:768px) {
+      .pr-nav {
+        padding-right: 13%;
+        margin-top: 2%;
+      }
+
+      .fs-h1 {
+        font-size: 35px;
+      }
+
+      .content-mt {
+        margin-top: 10%;
+        margin-left: -25%;
+      }
+
+      .wd-p {
+        width: 47%;
+      }
+
+      .fs-p {
+        font-size: 15px;
+      }
+      .ml-card{
+      margin-left: -0%;
+    }
+    .mw-card{
+      max-width: 350px;
+    }
+    .mw-carde{
+      width: 250px;
+    }
+    .fs-card{
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+    .ml-text{
+      margin-left: 0%;
+    }
+
+    }
+
+    @media(min-width:992px) {
+      .fs-h1 {
+        font-size: 38px;
+      }
+
+      .content-mt {
+        margin-top: 12%;
+        margin-left: 0%;
+      }
+
+      .wd-p {
+        width: 50%;
+      }
+
+      .fs-p {
+        font-size: 15px;
+      }
+
+      .pr-nav {
+        padding-right: 5%;
+        margin-top: 0%;
+      }
+      .ml-card{
+      margin-left: -0%;
+    }
+    .mw-card{
+      max-width: 310px;
+    }
+    /* .fs-card{
+      font-size: 20px;
+    } */
+
+    }
+
+
+    @media(min-width:1200px) {
+      .fs-h1 {
+        font-size: 50px;
+      }
+
+      .content-mt {
+        margin-top: 15%;
+        margin-left: 23%;
+      }
+
+      .wd-p {
+        width: 50%;
+      }
+
+      .fs-p {
+        font-size: 17px;
+      }
+      .ml-card{
+      margin-left: -5%;
+    }
+    .mw-card{
+      max-width: 350px;
+    }
+    /* .fs-card{
+      font-size: 24px;
+    } */
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- section1 -->
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel position-relative">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.jpg" class="d-block w-100" alt="...">
+        <div class="text-light text-end p-5 mb-5 position-absolute top-0 content-mt">
+          <h1 class="fw-bolder  pe-lg-5 pe-md-0 fs-h1">WELCOME OUR BEFIT </h1>
+          <p class="d-flex justify-content-end ">
+            <span class="pe-lg-5 lh-lg wd-p  fs-p">Sed ut perspiciatis unde omnis iste natus error
+              sitacntium doemque laudantium, totam rem aperiam eaque ipsa quae ab illo.
+          </p>
+          </span>
+          <button class="border border-light text-light rounded-1 py-2 px-0 mt-lg-4 mt-md-1 me-2 hemali"
+            style="background-color: transparent;">Read More</button>
+          <button class="me-lg-5 me-md-0 mb-5  border border-light text-light rounded-1 py-2  hemali"
+            style="background-color: transparent; ">Contact us</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" class="d-block w-100" alt="...">
+        <div class="text-light text-end p-5 mb-5 position-absolute top-0 " style="margin-top: 15%; margin-left: 23%;">
+          <h1 class="fw-bold  pe-5 display-4 ">YOGA & MEDITATION </h1>
+          <p class="d-flex justify-content-end">
+            <span class="pe-5 lh-lg w-50" style="font-size: 17px; ">Sed ut perspiciatis unde omnis ist natus errosit
+              acntium doemque laudantium, totam rem aperiam eaque ipsaquae ab illo.
+          </p>
+          </span>
+          <button class="border border-light text-light rounded-1 py-2 px-0 mt-4 me-2 hemali"
+            style="background-color: transparent;">Read More</button>
+          <button class="me-5 mb-5 border border-light text-light rounded-1 py-2  hemali"
+            style="background-color: transparent; ">Contact us</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" class="d-block w-100" alt="...">
+        <div class="text-light text-start p-5 mb-5  position-absolute top-0 "
+          style="margin-top: 15%; margin-left: 8%; ">
+          <h1 class="fw-bold  pe-5 display-4 ">YOGA & MEDITATION </h1>
+          <p class="d-flex ">
+            <span class="pe-5 lh-lg w-50" style="font-size: 17px; ">Sed ut perspiciatis unde omnis ist natus errosit
+              acntium doemque laudantium, totam rem aperiam eaque ipsaquae ab illo.
+          </p>
+          </span>
+          <button class="border border-light text-light rounded-1 py-2 px-0 mt-4 me-2 hemali"
+            style="background-color: transparent;">Read More</button>
+          <button class="me-5 mb-5 border border-light text-light rounded-1 py-2  hemali"
+            style="background-color: transparent; ">Contact us</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/4.jpg" class="d-block w-100" alt="...">
+        <div class="text-light text-start p-5 mb-5  position-absolute top-0 " style="margin-top: 15%; margin-left:8%;">
+          <h1 class="fw-bold  pe-5 display-4 ">YOGA & MEDITATION </h1>
+          <p class="d-flex ">
+            <span class="pe-5 lh-lg w-50" style="font-size: 17px; ">Sed ut perspiciatis unde omnis ist natus errosit
+              acntium doemque laudantium, totam rem aperiam eaque ipsaquae ab illo.
+          </p>
+          </span>
+          <button class="border border-light text-light rounded-1 py-2 px-0 mt-4 me-2 hemali"
+            style="background-color: transparent;">Read More</button>
+          <button class="me-5 mb-5 border border-light text-light rounded-1 py-2  hemali"
+            style="background-color: transparent; ">Contact us</button>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <div class="container-fluid position-absolute top-0">
+      <div class="row  img ">
+        <div class="col-xxl-5 col-xl-6 col-lg-4 col-md-4 col-sm-4 col-auto">
+          <h1 class="ms-3 mt-2 text-light ">Befit</h1>
+        </div>
+
+        <div class="col-xxl-7  col-xl-6 col-lg-8 col-md-8 col-sm-8 col-auto pr-nav" style="font-size: 17px;">
+          <nav class="navbar navbar-expand-lg " style="background-color: transparent;">
+            <div class="container-fluid">
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active btn btn-outline-light m-2" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light text-light m-2" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light m-2" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn btn-outline-light m-2" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                      <li><a class="dropdown-item" href="#">What We Do</a></li>
+                      <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light m-2" href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- section2 -->
+
+  <div class="container-fluid">
+    <div class="col-12">
+      <div class="row mt-lg-5 pt-lg-5 mt-md-5 pt-md-2 mt-sm-5 pt-sm-2 col-auto">
+        <h1 class=" d-flex justify-content-center ">Welcome to Our Website</h1>
+      </div>
+      <div class="container text-center w-xl-50   fw-light lh-lg col-auto">
+        <div class="row ms-xl-5 me-xl-5 ps-xl-5 pe-xl-5 ms-lg-3 me-lg-3 ms-md-2 me-md-2 ms-sm-2 me-sm-2 col-auto ">
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mx-xl-5 my-xl-4 px-xl-5  mx-lg-3  my-lg-4 mx-md-2 my-md-4  mx-sm-1 my-sm-4 col-auto">
+          <img src="img/about2.jpg" class="rounded  d-block">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <!-- section3 -->
+
+   <div class="container-fluid" style="background-color: #f8f9fa;">
+     <div class="container" >
+      <div class="row mt-xl-5 pt-xl-5 mt-lg-5 pt-lg-5 mt-sm-5 pt-sm-5 col-auto ">
+        <div class="col-lg-4 mb-5 pb-5" >
+          <h1 class="ms-xl-5 ps-xl-5 text-dark col-auto">Our Services</h1>
+          <p class="ms-xl-5 ps-xl-5 pe-xl-5 pe-sm-5  lh-lg" style="color: #999;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.</p>
+          <p style="color: #999;" class="ms-xl-5 ps-xl-5 mt-xl-3 lh-lg col-auto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabofdfd dsdsd.</p>
+        </div>
+        <div class="col-8 col-lg-8 col-md-12 ">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-auto">
+              <div class="card mw-card">
+                <div class="row g-0">
+                  <div class="col-md-2 ps-xl-3 ps-lg-3 ps-md-3 ps-sm-3 col-auto" style="font-size: 45px; ">
+                    <i class="fa-brands fa-apple " style="color: red;"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body  mw-carde col-auto" >
+                      <h4 class="card-title fs-card col-auto">Nutrition Strategy</h4>
+                      <p class="card-text col-auto ml-text pe-xl-5 mt-xl-3 mb-xl-3  pe-lg-5 mt-lg-3 mb-lg-3 pe-md-5 mt-md-3 mb-md-3 pe-sm-0 mt-sm-3 mb-sm-1" style="color: #999; background-color: #fff;" >Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 ml-card mt-md-0 mt-sm-4">
+              <div class="card mw-card" style=" background-color:#ff3c41;">
+                <div class="row g-0">
+                  <div class="col-md-2 ps-xl-3 ps-lg-3 ps-md-3 ps-sm-3" style="font-size: 45px; ">
+                    <i class="fa-solid fa-wheelchair-move" style="color:white;"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body mw-carde" >
+                      <h4 class="card-title  fs-card">Workout Routein</h4>
+                      <p class="card-text ml-text pe-xl-5 mt-xl-3 mb-xl-3 pe-lg-5 mt-lg-3 mb-lg-3 pe-md-5 mt-md-3 mb-md-3 pe-sm-0 mt-sm-3 mb-sm-1" style="color: white;" >Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                     
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row mt-xl-4 mt-lg-5 mt-md-5  mt-sm-4">
+            <div class="col-md-6 col-sm-12">
+              <div class="card mw-card" style=" background-color:#ff3c41;">
+                <div class="row g-0">
+                  <div class="col-md-2 ps-xl-3 ps-lg-3 ps-md-3 ps-sm-3" style="font-size: 43px; ">
+                    <i class="fa fa-hourglass-half " style="color:white;"></i>
+                  
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body mw-carde">
+                      <h4 class="card-title  fs-card">Cardio Excercise</h4>
+                      <p class="card-text ml-text pe-xl-5 mt-xl-3 mb-xl-3 pe-lg-5 mt-lg-3 mb-lg-3 pe-md-5 mt-md-3 mb-md-3 pe-sm-0 mt-sm-3 mb-sm-1" style="color:white;" >Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 ml-card mt-md-0 mt-sm-4" >
+              <div class="card mw-card">
+                <div class="row g-0">
+                  <div class="col-md-2 ps-xl-3 ps-lg-3 ps-md-3 ps-sm-3" style="font-size: 45px; ">
+                    <i  class="fa-solid fa-thumbs-up"  style="color: red;"></i> 
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body mw-carde" >
+                      <h4 class="card-title  fs-card">Individual Support</h4>
+                      <p class="card-text ml-text pe-xl-5 mt-xl-3 mb-xl-3 pe-lg-5 mt-lg-3 mb-lg-3 pe-md-5 mt-md-3 mb-md-3 pe-sm-0 mt-sm-3 mb-sm-1" style="color: #999; background-color: #fff;" >Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+
+  <!-- section4 -->
+   <div class="container-fluid">
+   <div class="col-12  ">
+    <div class="row position-relative ">
+    <img src="img/bg.jpg" style="height: 430px;">
+  
+   <div class="text position-absolute text-light text-center mt-5 pt-5">
+    <h2 class="fw-bold fs-1">Our Statistics</h2>
+    <p>Some More here..</p>
+    <div class="main d-flex ms-5 me-5 mt-5 ps-5 pe-5">
+    <div class="text1 ms-5 ps-5 pe-5">
+      <p class="display-3 fw-bold">18</p>
+      <p>Years of Experience</p>
+    </div>
+    <div class="text2 ms-5 ps-5 pe-5">
+      <p class="display-3 fw-bold">1200</p>
+      <p>Contest attended</p>
+    </div>
+    <div class="text3 ms-5 ps-5 pe-5 ">
+      <p class="display-3 fw-bold">700</p>
+      <p>Happy Customer</p>
+    </div>
+    <div class="text4 ms-5 ps-5 pe-5 ">
+      <p class="display-3 fw-bold">800</p>
+      <p>Weight Loss & Fitness</p>
+    </div>
+   </div>
+  </div>
+  </div>
+  </div>
+ </div> 
+
+
+</body>
+
+</html>
